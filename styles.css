@@ -62,8 +62,8 @@ h1, h2, h3, h4 { font-family: 'Noto Serif JP', serif; font-weight: 700; line-hei
    HEADER
 ============================ */
 .site-header {
-  background: #fff;
-  border-bottom: 1px solid #ece8e1;
+  background: #f2e0e0;
+  border-bottom: 1px solid #e5cfcf;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -821,13 +821,13 @@ h1, h2, h3, h4 { font-family: 'Noto Serif JP', serif; font-weight: 700; line-hei
   bottom: 0;
   left: 0;
   right: 0;
-  background: #fff;
+  background: #f2e0e0;
   color: #1a1a1a;
   padding: 10px 0;
   z-index: 90;
   transform: translateY(110%);
   transition: transform .5s cubic-bezier(.2,.8,.2,1);
-  border-top: 1px solid #ece8e1;
+  border-top: 1px solid #e5cfcf;
   box-shadow: 0 -20px 40px -20px rgba(0,0,0,.15);
 }
 .sticky-bar.show { transform: translateY(0); }
