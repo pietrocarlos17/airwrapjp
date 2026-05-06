@@ -984,9 +984,22 @@ h1, h2, h3, h4 { font-family: 'Noto Serif JP', serif; font-weight: 700; line-hei
   .reviews-grid { grid-template-columns: 1fr; }
   .footer-inner { grid-template-columns: 1fr 1fr; }
 }
+.hero-banner-mobile { display: none; }
+
 @media (max-width: 600px) {
   .section { padding: 60px 0; }
-  .hero { padding: 48px 0 64px; }
+  .hero { padding: 0 0 56px; }
+  .hero::before { display: none; }
+  .hero-banner-mobile {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    max-height: 60vh;
+    object-fit: cover;
+    object-position: center center;
+    margin-bottom: 32px;
+  }
+  .hero-inner { padding-top: 0; }
   .hero-metrics { grid-template-columns: 1fr; }
   .benefits-grid { grid-template-columns: 1fr; }
   .attachments-grid { grid-template-columns: 1fr; }
